@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
@@ -7,8 +7,306 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
          rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
          crossorigin="anonymous">
+         <link rel="stylesheet" 
+         href="https://cdn.jsdelivr.net/npm/
+         bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <img src="images/download.jpg" alt="" class="navbar-logo">
+            <a class="navbar-brand text-uppercase" href="#">Fashionova</a>
+            
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="#packages">Packages</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="modal fade" tabindex="-1" id="booking-modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buy a cloth</h5>
+                    <button type="button" 
+                    class="btn-close" 
+                    data-bs-dismiss="modal" 
+                    aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row g-2">
+                            <div class="column-sm-6">
+                                <div class="form-floating">
+                                    <input
+                                    id="email"
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Your email address">
+                                    <label for="email">Email address</label>
+                                </div>
+                            </div>
+                            <div class="column-sm-6">
+                                <div class="form-floating">
+                                    <select id="select1" class="form-select">
+                                        <option value="">Plain shirt with black trouser-&#8358;40,000</option>
+                                        <option value="">Nike Customised Shirt-&#8358;70,000</option>
+                                        <option value="">Suit-&#8358;100,000</option>
+                                    </select>
+                                    <label for="select">Select a brand</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <p>Pick among the various wears</p>
+                </div>
+                <div class="modal-footer">
+                      <button type="button" 
+                      class="btn btn-secondary" 
+                      data-bs-dismiss="modal">
+                      Close
+                    </button>
+                      <button type="button" class="btn btn-primary">Checkout</button>
+                </div>
+              </div>
+            </div>
+        </section>
+
+
+        <section id="hero-carousel" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" 
+                data-bs-target="#hero-carousel" 
+                data-bs-slide-to="0" 
+                class="active" 
+                aria-current="true" 
+                aria-label="Slide 1">
+                </button>
+
+                <button type="button" 
+                data-bs-target="#hero-carousel" 
+                data-bs-slide-to="1" 
+                aria-label="Slide 2">
+                </button>
+
+                <button type="button" 
+                data-bs-target="#hero-carousel" 
+                data-bs-slide-to="2" 
+                aria-label="Slide 3">
+                </button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                  <img src="images/pic.avif" class="c-img" alt="...">
+                  <div class="carousel-caption top-0 mt-4">
+                    <p class="fs-3 mt-5 text-uppercase">Discover some attractive attires</p>
+                    <h1 class="display-1 fw-bold text-capitalize">Fashionover</h1>
+                    <button
+                    class="btn btn-primary px-4 py-2 fs-5 mt-5"
+                    data-bs-toggle="modal"
+                    data-bs-target="#booking-modal"
+                    >
+                    Select a Brand
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-item active c-item">
+                  <img src="images/pic2.avif" class="c-img" alt="...">
+                  <div class="carousel-caption top-0 mt-4">
+                    <p class="fs-3 mt-5 text-uppercase">Discover some attractive attires</p>
+                    <h1 class="display-1 fw-bold text-capitalize">Fashionover</h1>
+                    <button
+                    class="btn btn-primary px-4 py-2 fs-5 mt-5"
+                    data-bs-toggle="modal"
+                    data-bs-target="#booking-modal"
+                    >
+                    Select a Brand
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-item active c-item">
+                  <img src="images/pic3.avif" class="c-img" alt="...">
+                  <div class="carousel-caption top-0 mt-4">
+                    <p class="fs-3 mt-5 text-uppercase">Discover some attractive attires</p>
+                    <h1 class="display-1 fw-bold text-capitalize">Fashionover</h1>
+                    <button
+                    class="btn btn-primary px-4 py-2 fs-5 mt-5"
+                    data-bs-toggle="modal"
+                    data-bs-target="#booking-modal"
+                    >
+                    Select a Brand
+                    </button>
+                  </div>
+                </div>
+            </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+        </section>
+
+
+       <section class="icons-section">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="row w-100 text-center fs-4">
+            <div class="col-xl">
+              <i class="bi bi-airplane-fill me-2"></i>
+              Colourful Clothes
+            </div>
+            <div class="col-xl">
+              <i class="bi bi-wallet-fill me-2"></i>
+              5% discount given 
+            </div>
+            <div class="col-xl">
+              <i class="bi bi-patch-check-fill me-2"></i>
+              50 purchasers already
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="packages" class="pt-5">
+        <h2 class="text-center my-5">Clothes Available</h2>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg">
+              <div class="card">
+                <img
+                  src="images/pic4.avif"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-5">Black top with blue jeans</h5>
+                  <p class="card-text fs-6 lh-base text-start text-md-justify font-sans-serif">
+                    A black top with blue jeans is a timeless, casual classic for fashion websites. It offers a versatile, minimalist look that appeals to everyday wearers. This outfit blends high-contrast edge with relaxed denim, making it a powerful visual anchor for styling tips, capsule wardrobes, and modern streetwear content.</p>
+                  <a href="#" class="btn btn-primary">Explore Similar Products</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg">
+              <div class="card">
+                <img
+                  src="images/pic9.avif"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-5">Old-school Clothes</h5>
+                  <p class="card-text fs-6 lh-base text-start text-md-justify font-sans-serif">
+                   Old-school clothing, also known as vintage or retro fashion, covers styles from the 1920s to the 1990s. It features unique prints, classic shapes, and lasting quality. People love it today to show personal style and support slow, eco-friendly shopping instead of fast fashion.
+                  </p>
+                  <a href="#" class="btn btn-primary">Explore Similar Products</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg">
+              <div class="card">
+                <img
+                  src="images/pic7.avif"
+                  class="card-img-top "
+                  alt="..." 
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-5">Brown jacket with black shirt</h5>
+                  <p class="card-text fs-6 lh-base text-start text-md-justify font-sans-serif">
+                    A brown jacket with a black shirt is a classic, stylish look. It mixes warm and cool tones. It works well for smart-casual styles, autumn looks, and modern minimalist fashion content on your website.
+                  </p>
+                  <a href="#" class="btn btn-primary">Explore Similar Products</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="py-md-5">
+        <h2 class="my-5 text-center">FAQ</h2>
+
+        <div class="container">
+          <div class="accordion w-75 mx-auto" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What type of clothes does Fashionova sell?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                We sell different types of clothes including <strong>Suits</strong>, <strong>jeans</strong>, and <strong>shirts</strong>.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                 How do I purchase a cloth?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Purchasing is easy! Click <strong>"Select a Brand"</strong> on our page, enter your email address, select any prand from the options and pay securely online. Need help? Call us at <a href="tel:+234">+234 912 778 3366</a> or email <a href="mailto:davidmapis2012@gmail.com">davidmapis2012@gmail.com</a>.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   What safety measures do you have in place?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Your safety is our priority. For each cloth, there is(are): 
+                <ul>
+                  <li>1 Month Warranty</li>
+                  <li>Verified transportation partners.</li>
+                  <li>24/7 emergency support during trips.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container mb-5">
+        <div class="bg-dark py-5 mt-5">
+          <p class="display-5 mb-3">axiahub tours</p>
+          <p class="text-white-50 text-center">&copy; Copyright 2025 by David. All right reserved</p>
+        </div>
+      </div>
+    </footer>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
         crossorigin="anonymous"></script>
